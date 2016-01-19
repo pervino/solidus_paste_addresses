@@ -12,7 +12,6 @@ window.PasteAddresses =
 			headers: {"X-Spree-Token": Spree.api_key},
 			data: {text: text}
 
-
 		req.done (address) ->
 			$el.parent().parent().find('[name*="firstname"]').val(address.firstname);
 			$el.parent().parent().find('[name*="lastname"]').val(address.lastname);

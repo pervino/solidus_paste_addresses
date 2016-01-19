@@ -11,8 +11,8 @@ module Spree
       def self.activate
         if Spree::PasteAddresses::Engine.backend_available?
           Rails.application.config.assets.precompile += [
-              'lib/assets/javascripts/spree/backend/solidus_paste_addresses.js',
-              'lib/assets/stylesheets/spree/backend/solidus_past_addresses.css'
+              'app/assets/javascripts/spree/backend/solidus_paste_addresses.js',
+              'app/assets/stylesheets/spree/backend/solidus_past_addresses.css'
           ]
           Dir.glob(File.join(File.dirname(__FILE__), "../../controllers/backend/*/*/*_decorator*.rb")) do |c|
             Rails.configuration.cache_classes ? require(c) : load(c)
