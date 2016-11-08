@@ -17,13 +17,13 @@ Gem::Specification.new do |s|
   s.require_path = "lib"
   s.requirements << "none"
 
-  # solidus_version = [">= 1.1.0.alpha", "< 2"]
+  solidus_version = [">= 1.1", "< 3"]
 
-  s.add_dependency "solidus_core" #, solidus_version
+  s.add_dependency "solidus_core", solidus_version
   s.add_dependency "deface", "~> 1.0.0"
   s.add_dependency "StreetAddress"
 
-  s.add_development_dependency "solidus_backend" #, solidus_version
+  s.add_development_dependency "solidus_backend", solidus_version
   s.add_development_dependency "rspec-rails", "~> 3.2"
   s.add_development_dependency "simplecov"
   s.add_development_dependency "sqlite3"
