@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   solidus_version = [">= 1.1", "< 3"]
 
   s.add_dependency "solidus_core", solidus_version
-  s.add_dependency "deface", "~> 1.0.0"
+  s.add_dependency "deface", "~> 1.0"
   s.add_dependency "StreetAddress"
 
   s.add_development_dependency "solidus_backend", solidus_version
